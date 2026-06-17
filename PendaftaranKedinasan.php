@@ -3,7 +3,6 @@
 require_once 'pendaftaran.php';
 
 class PendaftaranKedinasan extends Pendaftaran {
-    // Properti tambahan spesifik Kedinasan
     private $skIkatanDinas;
     private $instansiSponsor;
 
@@ -13,16 +12,15 @@ class PendaftaranKedinasan extends Pendaftaran {
         $this->instansiSponsor = $instansiSponsor;
     }
 
-    // Mengisi metode abstrak dari induk
+    // Tahap 5: Overriding Hitung Biaya Kedinasan (Surcharge Tambahan 25%)
     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar;
+        return $this->biayaPendaftaranDasar * 1.25;
     }
 
     public function tampilkanInfoJalur() {
-        return "Jalur Kedinasan";
+        return "Jalur Kedinasan (Sponsor: " . $this->instansiSponsor . ", SK: " . $this->skIkatanDinas . ")";
     }
 
-    // Metode Query Spesifik sesuai instruksi soal
     public function getDaftarKedinasan($db) {
         $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Kedinasan'";
         return mysqli_query($db, $query);

@@ -3,7 +3,6 @@
 require_once 'pendaftaran.php';
 
 class PendaftaranPrestasi extends Pendaftaran {
-    // Properti tambahan spesifik Prestasi
     private $jenisPrestasi;
     private $tingkatPrestasi;
 
@@ -13,16 +12,15 @@ class PendaftaranPrestasi extends Pendaftaran {
         $this->tingkatPrestasi = $tingkatPrestasi;
     }
 
-    // Mengisi metode abstrak dari induk
+    // Tahap 5: Overriding Hitung Biaya Prestasi (Potongan Rp 50.000)
     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar;
+        return $this->biayaPendaftaranDasar - 50000;
     }
 
     public function tampilkanInfoJalur() {
-        return "Jalur Prestasi";
+        return "Jalur Prestasi (" . $this->jenisPrestasi . " Tingkat " . $this->tingkatPrestasi . ")";
     }
 
-    // Metode Query Spesifik sesuai instruksi soal
     public function getDaftarPrestasi($db) {
         $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Prestasi'";
         return mysqli_query($db, $query);
