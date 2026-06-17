@@ -39,7 +39,7 @@ $dataKedinasan = $dummyKedinasan->getDaftarKedinasan($koneksi);
 </head>
 <body>
 
-    <h1>Daftar Pendaftaran Mahasiswa Baru - Awalia Salma (TI-1C)</h1>
+    <h1>Daftar Pendaftaran Mahasiswa Baru</h1>
 
     <div class="container-jalur jalur-reguler">
         <h2>Daftar Mahasiswa - Jalur Reguler</h2>
