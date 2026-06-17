@@ -50,9 +50,9 @@ $dataKedinasan = $dummyKedinasan->getDaftarKedinasan($koneksi);
                     <th>Nama Calon</th>
                     <th>Asal Sekolah</th>
                     <th>Nilai Ujian</th>
-                    <th>Informasi Detail Jalur (Polimorfik)</th>
+                    <th>Informasi Detail Jalur</th>
                     <th>Biaya Dasar</th>
-                    <th>Total Biaya (Polimorfik)</th>
+                    <th>Total Biaya</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,9 +87,9 @@ $dataKedinasan = $dummyKedinasan->getDaftarKedinasan($koneksi);
                     <th>Nama Calon</th>
                     <th>Asal Sekolah</th>
                     <th>Nilai Ujian</th>
-                    <th>Informasi Detail Jalur (Polimorfik)</th>
+                    <th>Informasi Detail Jalur</th>
                     <th>Biaya Dasar</th>
-                    <th>Total Biaya (Polimorfik)</th>
+                    <th>Total Biaya</th>
                 </tr>
             </thead>
             <tbody>
@@ -123,9 +123,9 @@ $dataKedinasan = $dummyKedinasan->getDaftarKedinasan($koneksi);
                     <th>Nama Calon</th>
                     <th>Asal Sekolah</th>
                     <th>Nilai Ujian</th>
-                    <th>Informasi Detail Jalur (Polimorfik)</th>
+                    <th>Informasi Detail Jalur</th>
                     <th>Biaya Dasar</th>
-                    <th>Total Biaya (Polimorfik)</th>
+                    <th>Total Biaya</th>
                 </tr>
             </thead>
             <tbody>
